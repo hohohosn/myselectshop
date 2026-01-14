@@ -18,10 +18,6 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.time.Duration;
 
-/**
- * Redis 캐시 설정
- * - 상품 목록, 인기 상품 등을 캐싱하여 성능 개선
- */
 @Configuration
 @EnableCaching
 public class RedisConfig {
