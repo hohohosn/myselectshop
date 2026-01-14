@@ -74,4 +74,5 @@ public class RedisConfig {
 				config.entryTtl(Duration.ofHours(2))) // 상품 상세 2시간
 			.build();
 	}
+	// 레디스 주석 변경(테스트)
 }
