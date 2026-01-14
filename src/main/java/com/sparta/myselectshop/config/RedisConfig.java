@@ -67,11 +67,11 @@ public class RedisConfig {
 		return RedisCacheManager.builder(connectionFactory)
 			.cacheDefaults(config)
 			.withCacheConfiguration("products",
-				config.entryTtl(Duration.ofMinutes(60))) // 상품 캐시는 1시간
+				config.entryTtl(Duration.ofMinutes(60))) // 상품 캐시 1시간
 			.withCacheConfiguration("popularProducts",
-				config.entryTtl(Duration.ofMinutes(10))) // 인기 상품은 10분
+				config.entryTtl(Duration.ofMinutes(10))) // 인기 상품 10분
 			.withCacheConfiguration("productDetail",
-				config.entryTtl(Duration.ofHours(2))) // 상품 상세는 2시간
+				config.entryTtl(Duration.ofHours(2))) // 상품 상세 2시간
 			.build();
 	}
 }
